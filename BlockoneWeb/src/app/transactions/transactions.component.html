@@ -1,0 +1,47 @@
+<hr/>
+
+<div class="form-group row">
+  <label for="orderIdId" class="col-2 col-form-label">Address</label>
+  <div class="col-8">
+    <input id="txHashId" class="form-control" type="text" [(ngModel)]="address" required/>
+  </div>
+  <button class="btn btn-primary" (click)="getTransactions()">Get transactions</button>
+</div>
+<div class="form-group row">
+  <label class="col-4 col-form-label">Balance (Eth)</label>
+  <label class="col-4 col-form-label">{{balance}}</label>
+</div>
+<div class="form-group row">
+  <div class="col-12">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>Hash</td>
+            <td>From</td>
+            <td>To</td>
+            <td>Amount</td>
+            <td>Fee (Eth)</td>
+          </tr>
+        </thead>
+        <tbody *ngFor="let tx of transactions">
+          <tr>
+            <td>
+              {{tx.hash}}
+            </td>
+            <td>
+              {{tx.from}}
+            </td>
+            <td>
+              {{tx.to}}
+            </td>
+            <td>
+              {{tx.amount}}
+            </td>
+            <td>
+              {{tx.fee}}
+            </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
