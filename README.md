@@ -1,4 +1,4 @@
-*Blockone Hackathon
+# Blockone Hackathon
 
 Автор: Максим Скворцов 
 
