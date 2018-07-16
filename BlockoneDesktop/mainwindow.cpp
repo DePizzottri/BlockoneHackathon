@@ -110,3 +110,31 @@ void MainWindow::on_pushButton_clicked()
     ui->label_5->setText("");
     ui->tableView->setModel(nullptr);
 }
+
+#include <QFile>
+#include <QTextStream>
+#include <QDesktopServices>
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    auto filename = ui->lineEdit->text() + ".csv";
+    QFile fout(filename);
+    fout.open(QIODevice::WriteOnly);
+
+    QTextStream sout(&fout);
+
+    sout << "txHash;From;To;Amount"<<endl;
+
+    auto model = static_cast<QStandardItemModel*> (ui->tableView->model());
+
+    for(int i =0; i<model->rowCount(); ++i) {
+       sout <<model->item(i, 0)<<";";
+       sout <<model->item(i, 1)<<";";
+       sout <<model->item(i, 2)<<";";
+       sout <<model->item(i, 3)<<";";
+       sout << endl;
+    }
+
+    ui->label_6->setText(filename + " записан");
+    QDesktopServices::openUrl( QUrl::fromLocalFile( filename ) );
+}
