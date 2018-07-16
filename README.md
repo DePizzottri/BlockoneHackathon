@@ -1,10 +1,10 @@
-* Blockone Hackathon
+*Blockone Hackathon
 
 Автор: Максим Скворцов 
 
 depizzottri at gmai1.com
 tg: @depizzottri
-
+```
 Задание #2
 Разработать десктопное или web приложение для блокчейна Ethereum
 Десктопное приложение будет оцениваться чуть выше.
@@ -14,11 +14,16 @@ tg: @depizzottri
 2.       ***Выгрузка полученных данных в Excel  
  
 Мы ввели в поле номер кошелька, и под ним получаем данные о транзакциях.
+```
 
 
 
 Решение состоит из 4х частей
+
 [Программа импорта транзакций](BlockoneImporter/README.md)
+
 [WEB сервис доступа](BlockoneBackend/README.md)
+
 [WEB приложение](BlockoneWeb/README.md)
+
 [Desktop приложение](BlockoneDesktop/README.md)
