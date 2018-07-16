@@ -25,7 +25,7 @@ import scala.collection.mutable._
 import com.mongodb.casbah.MongoClient
 import com.mongodb.casbah.Imports._
 
-object BlockoneBackend {
+object BlockforceBackend {
   var web3j: Web3j = null
   var web3jScala: Web3JScala = null
 

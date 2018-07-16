@@ -1,4 +1,4 @@
-name := "BlockoneImporter"
+name := "BlockforceImporter"
 
 version := "0.1.0"
 

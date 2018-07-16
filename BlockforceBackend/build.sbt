@@ -1,4 +1,4 @@
-name := "BlockoneBackend"
+name := "BlockforceBackend"
 
 version := "0.1.0"
 

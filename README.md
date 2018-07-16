@@ -1,4 +1,4 @@
-# Blockone Hackathon
+# Blockforce Hackathon
 
 Автор: Максим Скворцов 
 
@@ -21,10 +21,10 @@ tg: @depizzottri
 
 Решение состоит из 4х частей
 
-[Программа импорта транзакций](BlockoneImporter/README.md)
+[Программа импорта транзакций](BlockforceImporter/README.md)
 
-[WEB сервис доступа](BlockoneBackend/README.md)
+[WEB сервис доступа](BlockforceBackend/README.md)
 
-[WEB приложение](BlockoneWeb/README.md)
+[WEB приложение](BlockforceWeb/README.md)
 
-[Desktop приложение](BlockoneDesktop/README.md)
+[Desktop приложение](BlockforceDesktop/README.md)

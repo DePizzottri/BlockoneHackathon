@@ -1,4 +1,4 @@
-# Blockone Hackathon
+# Blockforce Hackathon
 
 Импорт и индексация транзакций из сети Ethereum в MongoDB посредством gRPC
 

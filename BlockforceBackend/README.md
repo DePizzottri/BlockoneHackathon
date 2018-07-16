@@ -1,4 +1,4 @@
-# Blockone Hackathon
+# Blockforce Hackathon
 
 Осуществляет доступ к индексированной базе транзакций
 

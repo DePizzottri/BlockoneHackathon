@@ -1,4 +1,4 @@
-# Blockone Hackathon
+# Blockforce Hackathon
 
 Веб фронтенд для отображения баланса и транзакций заданного адреса
 
