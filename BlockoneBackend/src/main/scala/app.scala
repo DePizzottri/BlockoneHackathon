@@ -97,8 +97,8 @@ object BlockoneBackend {
         respondWithDefaultHeaders(cors) {
           path("txs") {
             parameters("addr".as[String]){ addr =>
-              val from = col.find(MongoDBObject("from" -> addr)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
-              val to = col.find(MongoDBObject("to" -> addr)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
+              val from = col.find(MongoDBObject("from" -> addr.toLowerCase)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
+              val to = col.find(MongoDBObject("to" -> addr.toLowerCase)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
 
               calcFee(from)
               calcFee(to)
@@ -117,8 +117,8 @@ object BlockoneBackend {
           } ~
           path("balance") {
             parameters("addr".as[String]){ addr =>
-              val from = col.find(MongoDBObject("from" -> addr)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
-              val to = col.find(MongoDBObject("to" -> addr)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
+              val from = col.find(MongoDBObject("from" -> addr.toLowerCase)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
+              val to = col.find(MongoDBObject("to" -> addr.toLowerCase)).map{x => (x.getAsOrElse[String]("hash", ""), x)}.toMap
 
               calcFee(from)
               calcFee(to)
